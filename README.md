@@ -74,7 +74,7 @@ Tables:
 * `RAW.USERS`
 * `RAW.CARDS`
 
-All columns are stored as `VARCHAR` to preserve source integrity.
+All columns are stored as `VARCHAR` as I wanted to clean later on.
 
 ---
 
@@ -99,7 +99,7 @@ Models:
 
 ### MARTS (dbt)
 
-Business-ready datasets designed for analysis.
+Create datasets that are ready for analysis.
 
 Models:
 
@@ -113,9 +113,9 @@ Models:
 
 ## Python Analysis
 
-Python is used to create analytical datasets beyond standard SQL transformations.
+I normally use SQL for data manipulation so wanted to improve my knowledge and use Python for my transformations.
 
-Outputs written back to Snowflake:
+The Outputs are then written back to Snowflake as these are easier to feed into visualisation tools such as PowerBI:
 
 * `CUSTOMER_SEGMENTS`
 * `MONTHLY_SPEND_TRENDS`
@@ -218,7 +218,6 @@ Recommended tables:
 * Building scalable data pipelines
 * dbt data modelling (staging vs marts)
 * Snowflake data architecture
-* Python-based analytics workflows
-* Modular and reusable code design
+* Python-based analytics
 
 ---
