@@ -1,6 +1,6 @@
 # Financial Analytics Pipeline
 
-## 📌 Overview
+## Overview
 
 This project demonstrates an **end-to-end data pipeline** built using modern data engineering tools. It ingests raw financial data (from CSV files found here: https://www.kaggle.com/datasets/computingvictor/transactions-fraud-datasets/data?select=cards_data.csv), transforms it into analytics-ready datasets, performs advanced analysis in Python, and prepares outputs for visualization in Power BI.
 
@@ -13,7 +13,7 @@ The project follows industry best practices including:
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 * **Snowflake** – Cloud data warehouse
 * **dbt (Data Build Tool)** – Data transformation & modelling
@@ -22,7 +22,7 @@ The project follows industry best practices including:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 CSV (Kaggle dataset)
@@ -42,7 +42,7 @@ Snowflake analytics tables
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 finance_project/
@@ -62,9 +62,9 @@ finance_project/
 
 ---
 
-## 🧊 Data Layers
+## Data Layers
 
-### 🔹 RAW (Snowflake)
+### RAW (Snowflake)
 
 Raw CSV data is loaded into Snowflake with minimal transformation.
 
@@ -78,7 +78,7 @@ All columns are stored as `VARCHAR` to preserve source integrity.
 
 ---
 
-### 🔹 STAGING (dbt)
+### STAGING (dbt)
 
 Data is cleaned and standardised.
 
@@ -97,7 +97,7 @@ Models:
 
 ---
 
-### 🔹 MARTS (dbt)
+### MARTS (dbt)
 
 Business-ready datasets designed for analysis.
 
@@ -111,7 +111,7 @@ Models:
 
 ---
 
-## 🐍 Python Analysis
+## Python Analysis
 
 Python is used to create analytical datasets beyond standard SQL transformations.
 
@@ -127,7 +127,7 @@ Outputs written back to Snowflake:
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the repository
 
@@ -168,7 +168,7 @@ SNOWFLAKE_DATABASE=FINANCE_DB
 SNOWFLAKE_SCHEMA=ANALYTICS
 ```
 
-⚠️ This file is ignored by Git.
+This file is ignored by Git.
 
 ---
 
@@ -192,7 +192,7 @@ python -m python.analysis.monthly_spend_trends
 
 ---
 
-## 📊 Power BI
+## Power BI
 
 Power BI connects to Snowflake `ANALYTICS` schema.
 
@@ -205,7 +205,7 @@ Recommended tables:
 
 ---
 
-## 🔒 Security
+## Security
 
 * Credentials are stored in `.env`
 * `.env` is excluded via `.gitignore`
@@ -213,7 +213,7 @@ Recommended tables:
 
 ---
 
-## 🚀 Key Learnings
+## Key Learnings
 
 * Building scalable data pipelines
 * dbt data modelling (staging vs marts)
@@ -222,20 +222,3 @@ Recommended tables:
 * Modular and reusable code design
 
 ---
-
-## 📈 Future Improvements
-
-* Automate pipeline execution (e.g. Airflow)
-* Add dbt tests and documentation
-* Implement CI/CD pipeline
-* Enhance anomaly detection models
-* Add dashboard screenshots
-
----
-
-## 📬 Contact
-
-For questions or feedback, feel free to connect.
-
----
-
