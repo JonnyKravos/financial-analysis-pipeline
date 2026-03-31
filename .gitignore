@@ -1,0 +1,28 @@
+# Virtual environment
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# dbt generated artifacts
+dbt/target/
+dbt/logs/
+
+# Local environment files
+.env
+
+# VS Code / editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: Power BI files
+*.pbix
+
+#CSVs
+data/archive/transactions.csv

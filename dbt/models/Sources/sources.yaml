@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: FINANCE_DB
+    schema: RAW
+    tables:
+      - name: TRANSACTIONS
+      - name: USERS
+      - name: CARDS

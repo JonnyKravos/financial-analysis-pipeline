@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: fct_transactions
+    description: "One row per transaction"
+
+  - name: dim_users
+    description: "User dimension"
+
+  - name: dim_cards
+    description: "Card dimension"
+
+  - name: fct_daily_spend
+    description: "Daily aggregated spend"
