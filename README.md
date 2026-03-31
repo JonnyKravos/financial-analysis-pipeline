@@ -1,4 +1,4 @@
-# Financial Analytics Pipeline
+# Financial Analysis Pipeline
 
 ## Overview
 
